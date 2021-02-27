@@ -13,10 +13,11 @@
 		04D02BC925E88C1B000B762D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BC725E88C1B000B762D /* Main.storyboard */; };
 		04D02BCB25E88C27000B762D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCA25E88C27000B762D /* Assets.xcassets */; };
 		04D02BCE25E88C27000B762D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */; };
+		04D02BDA25E96E81000B762D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BD925E96E80000B762D /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04D02BBE25E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COBSCComp192p-053_Assignment-03-Foody.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D02BBE25E88C1A000B762D /* Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D02BC125E88C1B000B762D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D02BC325E88C1B000B762D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04D02BC525E88C1B000B762D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		04D02BCA25E88C27000B762D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D02BCD25E88C27000B762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D02BCF25E88C27000B762D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D02BD925E96E80000B762D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		04D02BBF25E88C1A000B762D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04D02BBE25E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody.app */,
+				04D02BBE25E88C1A000B762D /* Foody.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +62,7 @@
 				04D02BC325E88C1B000B762D /* SceneDelegate.swift */,
 				04D02BC525E88C1B000B762D /* ViewController.swift */,
 				04D02BC725E88C1B000B762D /* Main.storyboard */,
+				04D02BD925E96E80000B762D /* background.jpg */,
 				04D02BCA25E88C27000B762D /* Assets.xcassets */,
 				04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */,
 				04D02BCF25E88C27000B762D /* Info.plist */,
@@ -84,7 +87,7 @@
 			);
 			name = "COBSCComp192p-053_Assignment-03-Foody";
 			productName = "COBSCComp192p-053_Assignment-03-Foody";
-			productReference = 04D02BBE25E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody.app */;
+			productReference = 04D02BBE25E88C1A000B762D /* Foody.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D02BCE25E88C27000B762D /* LaunchScreen.storyboard in Resources */,
+				04D02BDA25E96E81000B762D /* background.jpg in Resources */,
 				04D02BCB25E88C27000B762D /* Assets.xcassets in Resources */,
 				04D02BC925E88C1B000B762D /* Main.storyboard in Resources */,
 			);
@@ -292,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.upekshaD.COBSCComp192p-053-Assignment-03-Foody";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Foody;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.upekshaD.COBSCComp192p-053-Assignment-03-Foody";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Foody;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="COBSCComp192p_053_Assignment_03_Foody" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +133,7 @@
         <!--SignUP-->
         <scene sceneID="pSV-4C-0f5">
             <objects>
-                <viewController title="SignUP" id="Xia-PY-HVZ" customClass="ViewController" customModule="COBSCComp192p_053_Assignment_03_Foody" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUP" id="Xia-PY-HVZ" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHT-Xs-uAT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,6 +238,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12e-Ts-7sl" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042.0289855072465" y="40.848214285714285"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="EfL-pj-gyt">
+            <objects>
+                <viewController title="Location" id="ylk-ct-ryg" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFT-db-NXy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wtw-zb-usp"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLW-tV-jaM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="41"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnLogin(_ sender: Any) {
+        self.performSegue(withIdentifier: "SignInToMain", sender: nil)
+    }
+    
 }
 

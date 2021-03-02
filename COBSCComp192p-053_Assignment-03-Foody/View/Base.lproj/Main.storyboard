@@ -76,11 +76,33 @@
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vCq-7b-Ufv"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="V24-5h-VtU">
+                                <rect key="frame" x="125.5" y="501" width="124.5" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not a member yet?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB9-jl-Qd8">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="15"/>
+                                        <color key="textColor" red="0.77250555200000004" green="0.1647464139" blue="0.1140375367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikP-NK-AgX">
+                                        <rect key="frame" x="0.0" y="19.5" width="124.5" height="30"/>
+                                        <state key="normal" title="Join with Foody">
+                                            <color key="titleColor" red="0.91287277918781728" green="0.2123210389726205" blue="0.17812203669304136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124.5" id="2Up-Dp-5xR"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="V24-5h-VtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2j1-YN-3cO"/>
                             <constraint firstItem="pkb-Sp-LfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Zm-J2-Hg2"/>
                             <constraint firstItem="evK-9b-Woz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xp-ro-XSI"/>
+                            <constraint firstItem="V24-5h-VtU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="192.25" id="99X-cw-iLw"/>
                             <constraint firstItem="h77-Et-koM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-164.25" id="Adi-1A-hGG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h77-Et-koM" secondAttribute="trailing" id="ByN-Yp-MAI"/>
                             <constraint firstItem="S7e-Gu-IdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DPY-ya-kOO"/>
@@ -221,15 +243,15 @@
                                 <rect key="frame" x="13" y="80" width="349" height="261"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllowLocation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gp-vY-KJO">
-                                        <rect key="frame" x="127.5" y="17.5" width="94" height="183"/>
+                                        <rect key="frame" x="-78.5" y="17.5" width="506" height="183"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="183" id="w97-H0-f2A"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Foody to access your location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gry-U4-PdI">
-                                        <rect key="frame" x="30" y="165.5" width="289" height="21.5"/>
+                                        <rect key="frame" x="30" y="208" width="289" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" red="0.70411643400000001" green="0.17066238659999999" blue="0.14428377549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.86024746192893398" green="0.27434742503271747" blue="0.32124582670015361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -238,11 +260,11 @@
                                     <constraint firstItem="gry-U4-PdI" firstAttribute="centerX" secondItem="wiw-nU-8u9" secondAttribute="centerX" id="dWg-Eo-yKe"/>
                                     <constraint firstItem="9Gp-vY-KJO" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="-21.5" id="hZT-ez-E65"/>
                                     <constraint firstItem="gry-U4-PdI" firstAttribute="centerX" secondItem="9Gp-vY-KJO" secondAttribute="centerX" id="k6x-eV-pq8"/>
-                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="45.75" id="tj7-HB-1Ha"/>
+                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="88.25" id="tj7-HB-1Ha"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oMh-O5-2W0">
-                                <rect key="frame" x="128" y="401" width="119" height="102"/>
+                                <rect key="frame" x="128" y="510" width="119" height="102"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-yr-Rp9">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="47"/>
@@ -264,17 +286,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking on allow button, you will give the Foody the permission to access your location." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb6-Ie-962">
+                                <rect key="frame" x="42" y="349" width="290" height="125"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="0.7725055520304569" green="0.16474641388779482" blue="0.11403753668679337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oMh-O5-2W0" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="bottom" constant="60" id="6hN-WC-wuu"/>
+                            <constraint firstItem="cb6-Ie-962" firstAttribute="bottom" secondItem="oMh-O5-2W0" secondAttribute="bottom" constant="-138" id="5G9-yC-SH1"/>
+                            <constraint firstItem="cb6-Ie-962" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="42" id="5U2-9A-pwh"/>
+                            <constraint firstItem="oMh-O5-2W0" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="bottom" constant="169" id="6hN-WC-wuu"/>
                             <constraint firstItem="oMh-O5-2W0" firstAttribute="centerX" secondItem="W94-Ri-EZW" secondAttribute="centerX" id="VfY-hu-TZu"/>
                             <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="wiw-nU-8u9" secondAttribute="trailing" constant="13" id="nEf-gV-NqB"/>
+                            <constraint firstItem="cb6-Ie-962" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="top" constant="269" id="nh7-xc-wRb"/>
+                            <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="cb6-Ie-962" secondAttribute="trailing" constant="43" id="oWM-zg-6JY"/>
                             <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="oMh-O5-2W0" secondAttribute="trailing" constant="128" id="tw1-YD-EpR"/>
                             <constraint firstItem="wiw-nU-8u9" firstAttribute="top" secondItem="JeF-pC-9cg" secondAttribute="top" constant="80" id="ujq-GF-weh"/>
                             <constraint firstItem="wiw-nU-8u9" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="13" id="vYI-F3-zlO"/>
                             <constraint firstItem="oMh-O5-2W0" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="128" id="wUh-cA-HaE"/>
-                            <constraint firstItem="JeF-pC-9cg" firstAttribute="bottom" secondItem="oMh-O5-2W0" secondAttribute="bottom" constant="164" id="ymc-BT-0Kt"/>
+                            <constraint firstItem="JeF-pC-9cg" firstAttribute="bottom" secondItem="oMh-O5-2W0" secondAttribute="bottom" constant="55" id="ymc-BT-0Kt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JeF-pC-9cg"/>
                         <userDefinedRuntimeAttributes>
@@ -285,89 +317,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28h-QD-WWq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511" y="41"/>
+            <point key="canvasLocation" x="-511.19999999999999" y="40.929535232383813"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="cbL-hf-Bb1">
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ibd-vN-Yvv">
             <objects>
-                <viewController title="Home" id="MUk-BP-918" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s8l-o6-977">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XHf-J7-eZG"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nr0-yW-rxS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HOZ-jy-4ZX" sceneMemberID="firstResponder"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="pDC-Et-ehN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95812182739999996" green="0.52272793456412159" blue="0.22736843714198127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.91979298860000003" green="0.85947031860000001" blue="0.48320807269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhq-m7-zeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="40.929535232383813"/>
-        </scene>
-        <!--Food-->
-        <scene sceneID="Cvr-OF-f6Q">
-            <objects>
-                <viewController title="Food" id="juD-Tg-xwg" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uv6-3c-1Wg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Wgf-rA-fkq"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sqp-Sd-jJf" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1145" y="41"/>
-        </scene>
-        <!--Order-->
-        <scene sceneID="e3a-LE-VQ8">
-            <objects>
-                <viewController title="Order" id="WXn-IN-wtP" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="inf-94-QaJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="x8B-Y1-s1T"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wo2-x2-dEj" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1986" y="41"/>
-        </scene>
-        <!--Account-->
-        <scene sceneID="KU5-uA-YiL">
-            <objects>
-                <viewController title="Account" id="8K1-mg-Ojx" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aht-Tj-YUc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lcc-lC-bvb"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxg-PY-eoO" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2826" y="41"/>
+            <point key="canvasLocation" x="1753" y="-721"/>
         </scene>
     </scenes>
     <resources>
-        <image name="AllowLocation" width="94" height="88"/>
+        <image name="AllowLocation" width="506" height="311"/>
         <image name="background.jpg" width="640" height="960"/>
     </resources>
 </document>

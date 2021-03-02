@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "pin2x-1.png",
+      "filename" : "gps-services-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "pin2x-2.png",
+      "filename" : "gps-services-3.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "pin2x-3.png",
+      "filename" : "gps-services-4.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

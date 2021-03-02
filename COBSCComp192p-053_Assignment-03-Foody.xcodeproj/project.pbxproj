@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */; };
+		04B1272D25ECA4FC00B54E39 /* MyOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */; };
+		04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */; };
+		04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */; };
+		04B1273325EE539A00B54E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B1273225EE539900B54E39 /* GoogleService-Info.plist */; };
 		04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC125E88C1B000B762D /* AppDelegate.swift */; };
 		04D02BC425E88C1B000B762D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC325E88C1B000B762D /* SceneDelegate.swift */; };
 		04D02BC625E88C1B000B762D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC525E88C1B000B762D /* ViewController.swift */; };
@@ -14,9 +19,15 @@
 		04D02BCB25E88C27000B762D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCA25E88C27000B762D /* Assets.xcassets */; };
 		04D02BCE25E88C27000B762D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */; };
 		04D02BDA25E96E81000B762D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BD925E96E80000B762D /* background.jpg */; };
+		9CD6E5BD69246D9645BE0883 /* Pods_COBSCComp192p_053_Assignment_03_Foody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1789776C444D74E30BA6419D /* Pods_COBSCComp192p_053_Assignment_03_Foody.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderTableViewController.swift; sourceTree = "<group>"; };
+		04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		04B1273225EE539900B54E39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04D02BBE25E88C1A000B762D /* Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D02BC125E88C1B000B762D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D02BC325E88C1B000B762D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,9 @@
 		04D02BCD25E88C27000B762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D02BCF25E88C27000B762D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D02BD925E96E80000B762D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		1789776C444D74E30BA6419D /* Pods_COBSCComp192p_053_Assignment_03_Foody.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COBSCComp192p_053_Assignment_03_Foody.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E65DDBA0994A7D6FDD8CBB /* Pods-COBSCComp192p-053_Assignment-03-Foody.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COBSCComp192p-053_Assignment-03-Foody.debug.xcconfig"; path = "Target Support Files/Pods-COBSCComp192p-053_Assignment-03-Foody/Pods-COBSCComp192p-053_Assignment-03-Foody.debug.xcconfig"; sourceTree = "<group>"; };
+		985315DAC88A98F7A86B9546 /* Pods-COBSCComp192p-053_Assignment-03-Foody.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COBSCComp192p-053_Assignment-03-Foody.release.xcconfig"; path = "Target Support Files/Pods-COBSCComp192p-053_Assignment-03-Foody/Pods-COBSCComp192p-053_Assignment-03-Foody.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD6E5BD69246D9645BE0883 /* Pods_COBSCComp192p_053_Assignment_03_Foody.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04B1272125EC9EF600B54E39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B1272225EC9F0900B54E39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04D02BC725E88C1B000B762D /* Main.storyboard */,
+				04D02BD925E96E80000B762D /* background.jpg */,
+				04D02BCA25E88C27000B762D /* Assets.xcassets */,
+				04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B1272325EC9F1200B54E39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04D02BC125E88C1B000B762D /* AppDelegate.swift */,
+				04D02BC325E88C1B000B762D /* SceneDelegate.swift */,
+				04D02BC525E88C1B000B762D /* ViewController.swift */,
+				04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */,
+				04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */,
+				04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */,
+				04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04D02BB525E88C1A000B762D = {
 			isa = PBXGroup;
 			children = (
 				04D02BC025E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody */,
 				04D02BBF25E88C1A000B762D /* Products */,
+				28BE026F90068E6CFE411F76 /* Pods */,
+				6877CFFA6E1EFDFE026373D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +107,30 @@
 		04D02BC025E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody */ = {
 			isa = PBXGroup;
 			children = (
-				04D02BC125E88C1B000B762D /* AppDelegate.swift */,
-				04D02BC325E88C1B000B762D /* SceneDelegate.swift */,
-				04D02BC525E88C1B000B762D /* ViewController.swift */,
-				04D02BC725E88C1B000B762D /* Main.storyboard */,
-				04D02BD925E96E80000B762D /* background.jpg */,
-				04D02BCA25E88C27000B762D /* Assets.xcassets */,
-				04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */,
+				04B1272325EC9F1200B54E39 /* Controller */,
+				04B1272225EC9F0900B54E39 /* View */,
+				04B1272125EC9EF600B54E39 /* Model */,
 				04D02BCF25E88C27000B762D /* Info.plist */,
+				04B1273225EE539900B54E39 /* GoogleService-Info.plist */,
 			);
 			path = "COBSCComp192p-053_Assignment-03-Foody";
+			sourceTree = "<group>";
+		};
+		28BE026F90068E6CFE411F76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74E65DDBA0994A7D6FDD8CBB /* Pods-COBSCComp192p-053_Assignment-03-Foody.debug.xcconfig */,
+				985315DAC88A98F7A86B9546 /* Pods-COBSCComp192p-053_Assignment-03-Foody.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6877CFFA6E1EFDFE026373D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1789776C444D74E30BA6419D /* Pods_COBSCComp192p_053_Assignment_03_Foody.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D02BD225E88C27000B762D /* Build configuration list for PBXNativeTarget "COBSCComp192p-053_Assignment-03-Foody" */;
 			buildPhases = (
+				1627C19A8A0C6C60AADFF452 /* [CP] Check Pods Manifest.lock */,
 				04D02BBA25E88C1A000B762D /* Sources */,
 				04D02BBB25E88C1A000B762D /* Frameworks */,
 				04D02BBC25E88C1A000B762D /* Resources */,
+				5FEB028146FC5D9566C4A706 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +195,7 @@
 			files = (
 				04D02BCE25E88C27000B762D /* LaunchScreen.storyboard in Resources */,
 				04D02BDA25E96E81000B762D /* background.jpg in Resources */,
+				04B1273325EE539A00B54E39 /* GoogleService-Info.plist in Resources */,
 				04D02BCB25E88C27000B762D /* Assets.xcassets in Resources */,
 				04D02BC925E88C1B000B762D /* Main.storyboard in Resources */,
 			);
@@ -137,14 +203,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1627C19A8A0C6C60AADFF452 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-COBSCComp192p-053_Assignment-03-Foody-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEB028146FC5D9566C4A706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COBSCComp192p-053_Assignment-03-Foody/Pods-COBSCComp192p-053_Assignment-03-Foody-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-COBSCComp192p-053_Assignment-03-Foody/Pods-COBSCComp192p-053_Assignment-03-Foody-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-COBSCComp192p-053_Assignment-03-Foody/Pods-COBSCComp192p-053_Assignment-03-Foody-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04D02BBA25E88C1A000B762D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04D02BC625E88C1B000B762D /* ViewController.swift in Sources */,
+				04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */,
 				04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */,
+				04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */,
 				04D02BC425E88C1B000B762D /* SceneDelegate.swift in Sources */,
+				04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */,
+				04B1272D25ECA4FC00B54E39 /* MyOrderTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +398,7 @@
 		};
 		04D02BD325E88C27000B762D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E65DDBA0994A7D6FDD8CBB /* Pods-COBSCComp192p-053_Assignment-03-Foody.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +417,7 @@
 		};
 		04D02BD425E88C27000B762D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985315DAC88A98F7A86B9546 /* Pods-COBSCComp192p-053_Assignment-03-Foody.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

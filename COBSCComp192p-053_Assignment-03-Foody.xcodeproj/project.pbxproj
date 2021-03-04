@@ -12,9 +12,11 @@
 		04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */; };
 		04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */; };
 		04B1273325EE539A00B54E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B1273225EE539900B54E39 /* GoogleService-Info.plist */; };
+		04B1273525EFBA3C00B54E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273425EFBA3C00B54E39 /* LoginViewController.swift */; };
+		04B1273725EFBA6A00B54E39 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */; };
+		04B1273925F08B7400B54E39 /* ThankyouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273825F08B7400B54E39 /* ThankyouViewController.swift */; };
 		04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC125E88C1B000B762D /* AppDelegate.swift */; };
 		04D02BC425E88C1B000B762D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC325E88C1B000B762D /* SceneDelegate.swift */; };
-		04D02BC625E88C1B000B762D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D02BC525E88C1B000B762D /* ViewController.swift */; };
 		04D02BC925E88C1B000B762D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BC725E88C1B000B762D /* Main.storyboard */; };
 		04D02BCB25E88C27000B762D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCA25E88C27000B762D /* Assets.xcassets */; };
 		04D02BCE25E88C27000B762D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D02BCC25E88C27000B762D /* LaunchScreen.storyboard */; };
@@ -28,10 +30,12 @@
 		04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
 		04B1273225EE539900B54E39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04B1273425EFBA3C00B54E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		04B1273825F08B7400B54E39 /* ThankyouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankyouViewController.swift; sourceTree = "<group>"; };
 		04D02BBE25E88C1A000B762D /* Foody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D02BC125E88C1B000B762D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D02BC325E88C1B000B762D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04D02BC525E88C1B000B762D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04D02BC825E88C1B000B762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04D02BCA25E88C27000B762D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D02BCD25E88C27000B762D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,8 +81,10 @@
 			children = (
 				04D02BC125E88C1B000B762D /* AppDelegate.swift */,
 				04D02BC325E88C1B000B762D /* SceneDelegate.swift */,
-				04D02BC525E88C1B000B762D /* ViewController.swift */,
 				04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */,
+				04B1273425EFBA3C00B54E39 /* LoginViewController.swift */,
+				04B1273825F08B7400B54E39 /* ThankyouViewController.swift */,
+				04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */,
 				04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */,
 				04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */,
 				04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */,
@@ -250,9 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D02BC625E88C1B000B762D /* ViewController.swift in Sources */,
+				04B1273525EFBA3C00B54E39 /* LoginViewController.swift in Sources */,
 				04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */,
+				04B1273725EFBA6A00B54E39 /* SignUpViewController.swift in Sources */,
 				04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */,
+				04B1273925F08B7400B54E39 /* ThankyouViewController.swift in Sources */,
 				04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */,
 				04D02BC425E88C1B000B762D /* SceneDelegate.swift in Sources */,
 				04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */,

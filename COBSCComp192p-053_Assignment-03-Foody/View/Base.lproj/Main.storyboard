@@ -46,27 +46,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evK-9b-Woz">
-                                <rect key="frame" x="61" y="409" width="253" height="56"/>
-                                <color key="backgroundColor" red="0.8397247779" green="0.39001693030000001" blue="0.19544066390000001" alpha="0.91673801369999997" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="XI5-Qx-ajL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="253" id="sp0-FA-YYB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.91979298860000003" green="0.85947031860000001" blue="0.48320807269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="BtnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1V-Ha-r4F"/>
-                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNT-JR-F3x"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="V24-5h-VtU">
                                 <rect key="frame" x="125.5" y="501" width="124.5" height="49.5"/>
                                 <subviews>
@@ -90,23 +69,46 @@
                                     <constraint firstAttribute="width" constant="124.5" id="2Up-Dp-5xR"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpo-XN-bJR">
-                                <rect key="frame" x="222" y="268.5" width="106" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsF-Fh-YTB">
+                                <rect key="frame" x="89" y="386.5" width="197" height="56"/>
+                                <color key="backgroundColor" red="0.87650697970000002" green="0.44271151949999998" blue="0.19034071659999999" alpha="0.8396297089041096" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="Wjz-OR-Lgo"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="x8n-uc-aSj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="M70-l7-rzT"/>
+                                    <constraint firstAttribute="height" constant="56" id="tgt-cd-1BF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="13"/>
-                                <state key="normal" title="Forget password?">
-                                    <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.84348244863013699" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.91979298860000003" green="0.85947031860000001" blue="0.48320807269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Stc-hR-wSS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luL-p0-zoN">
+                                <rect key="frame" x="211" y="341" width="117" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="Cz4-hG-CTw"/>
+                                    <constraint firstAttribute="height" constant="37" id="ugZ-a7-FmI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <state key="normal" title="Forget password?">
+                                    <color key="titleColor" red="0.77250555200000004" green="0.1647464139" blue="0.1140375367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnForgetpass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ho3-t4-xsr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="V24-5h-VtU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2j1-YN-3cO"/>
                             <constraint firstItem="pkb-Sp-LfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Zm-J2-Hg2"/>
-                            <constraint firstItem="evK-9b-Woz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Xp-ro-XSI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="luL-p0-zoN" secondAttribute="trailing" constant="47" id="8if-mP-y8b"/>
                             <constraint firstItem="V24-5h-VtU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="192.25" id="99X-cw-iLw"/>
                             <constraint firstItem="h77-Et-koM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-164.25" id="Adi-1A-hGG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h77-Et-koM" secondAttribute="trailing" id="ByN-Yp-MAI"/>
@@ -115,13 +117,13 @@
                             <constraint firstItem="pkb-Sp-LfG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-51" id="NMV-y7-f2Q"/>
                             <constraint firstItem="S7e-Gu-IdG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qld-YS-fZJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7e-Gu-IdG" secondAttribute="trailing" id="Waw-D1-eja"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lpo-XN-bJR" secondAttribute="trailing" constant="47" id="cgd-BJ-8ze"/>
+                            <constraint firstItem="ZsF-Fh-YTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJd-WB-vwl"/>
+                            <constraint firstItem="luL-p0-zoN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="26" id="aeg-pS-SmZ"/>
+                            <constraint firstItem="ZsF-Fh-YTB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="81" id="e1Q-Bx-zKN"/>
                             <constraint firstItem="S7e-Gu-IdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gl1-IH-1sm"/>
-                            <constraint firstItem="evK-9b-Woz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="103.5" id="ntN-Lj-tSP"/>
-                            <constraint firstItem="lpo-XN-bJR" firstAttribute="centerY" secondItem="pkb-Sp-LfG" secondAttribute="centerY" id="pQq-je-osz"/>
+                            <constraint firstItem="luL-p0-zoN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="211" id="oGc-28-Mf5"/>
                             <constraint firstItem="S7e-Gu-IdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdL-9v-TY0"/>
                             <constraint firstItem="h77-Et-koM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shs-rb-tIm"/>
-                            <constraint firstItem="lpo-XN-bJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="222" id="vbw-pD-o3t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
@@ -251,7 +253,7 @@
         <!--Allow Location-->
         <scene sceneID="C3Y-VN-ej5">
             <objects>
-                <viewController title="Allow Location" id="4xP-31-5Os" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Location" title="Allow Location" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4xP-31-5Os" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W94-Ri-EZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,23 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28h-QD-WWq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271" y="41"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Ibd-vN-Yvv">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nr0-yW-rxS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="pDC-Et-ehN">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.95812182739999996" green="0.52272793456412159" blue="0.22736843714198127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.91979298860000003" green="0.85947031860000001" blue="0.48320807269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fhq-m7-zeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1753" y="-721"/>
+            <point key="canvasLocation" x="436" y="41"/>
         </scene>
         <!--Thank you for joining-->
         <scene sceneID="nWG-Zr-dLZ">
@@ -408,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixy-eu-PbF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="41"/>
+            <point key="canvasLocation" x="-393" y="41"/>
         </scene>
     </scenes>
     <resources>

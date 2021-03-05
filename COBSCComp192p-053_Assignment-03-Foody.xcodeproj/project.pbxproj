@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		047C72CC25F12B1800000A54 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72CB25F12B1800000A54 /* LocationViewController.swift */; };
-		047C72CF25F199A500000A54 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72CE25F199A500000A54 /* Location.swift */; };
 		04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */; };
 		04B1272D25ECA4FC00B54E39 /* MyOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */; };
 		04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		047C72CB25F12B1800000A54 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		047C72CE25F199A500000A54 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderTableViewController.swift; sourceTree = "<group>"; };
 		04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
@@ -62,14 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		047C72CD25F1994400000A54 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				047C72CE25F199A500000A54 /* Location.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		04B1272125EC9EF600B54E39 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +116,6 @@
 		04D02BC025E88C1A000B762D /* COBSCComp192p-053_Assignment-03-Foody */ = {
 			isa = PBXGroup;
 			children = (
-				047C72CD25F1994400000A54 /* Services */,
 				04B1272325EC9F1200B54E39 /* Controller */,
 				04B1272225EC9F0900B54E39 /* View */,
 				04B1272125EC9EF600B54E39 /* Model */,
@@ -271,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B1273525EFBA3C00B54E39 /* LoginViewController.swift in Sources */,
-				047C72CF25F199A500000A54 /* Location.swift in Sources */,
 				04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */,
 				04B1273725EFBA6A00B54E39 /* SignUpViewController.swift in Sources */,
 				04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */,

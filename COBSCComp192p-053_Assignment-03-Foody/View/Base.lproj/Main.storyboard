@@ -253,22 +253,23 @@
         <!--Allow Location-->
         <scene sceneID="C3Y-VN-ej5">
             <objects>
-                <viewController storyboardIdentifier="Location" title="Allow Location" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4xP-31-5Os" customClass="ViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Location" title="Allow Location" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4xP-31-5Os" customClass="LocationViewController" customModule="Foody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W94-Ri-EZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiw-nU-8u9">
-                                <rect key="frame" x="13" y="80" width="349" height="261"/>
+                                <rect key="frame" x="10" y="80" width="349" height="261"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllowLocation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gp-vY-KJO">
-                                        <rect key="frame" x="-78.5" y="17.5" width="506" height="183"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="183" id="w97-H0-f2A"/>
-                                        </constraints>
+                                        <rect key="frame" x="8" y="-11" width="329" height="225"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Foody to access your location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gry-U4-PdI">
-                                        <rect key="frame" x="30" y="208" width="289" height="21.5"/>
+                                        <rect key="frame" x="30" y="231" width="289" height="21.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21.5" id="MqI-6l-eyZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="s3g-9M-RyB"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" red="0.86024746192893398" green="0.27434742503271747" blue="0.32124582670015361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -276,56 +277,39 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerX" secondItem="wiw-nU-8u9" secondAttribute="centerX" id="dWg-Eo-yKe"/>
-                                    <constraint firstItem="9Gp-vY-KJO" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="-21.5" id="hZT-ez-E65"/>
-                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerX" secondItem="9Gp-vY-KJO" secondAttribute="centerX" id="k6x-eV-pq8"/>
-                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="88.25" id="tj7-HB-1Ha"/>
+                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerY" secondItem="wiw-nU-8u9" secondAttribute="centerY" constant="111.25" id="GDn-Qt-2n3"/>
+                                    <constraint firstAttribute="height" constant="261" id="JgE-Oy-PLs"/>
+                                    <constraint firstItem="9Gp-vY-KJO" firstAttribute="leading" secondItem="wiw-nU-8u9" secondAttribute="leadingMargin" id="RLU-9F-FPr"/>
+                                    <constraint firstItem="gry-U4-PdI" firstAttribute="top" secondItem="9Gp-vY-KJO" secondAttribute="bottom" constant="17" id="S9i-3T-DN4"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Gp-vY-KJO" secondAttribute="trailing" constant="12" id="XcB-s1-A3S"/>
+                                    <constraint firstItem="gry-U4-PdI" firstAttribute="centerX" secondItem="wiw-nU-8u9" secondAttribute="centerX" id="nwq-30-17k"/>
+                                    <constraint firstItem="9Gp-vY-KJO" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="top" constant="-11" id="pPx-0Q-Rf4"/>
+                                    <constraint firstAttribute="width" constant="349" id="sL7-2H-A0N"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oMh-O5-2W0">
-                                <rect key="frame" x="128" y="510" width="119" height="102"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-yr-Rp9">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="47"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="687-5S-l6i"/>
-                                            <constraint firstAttribute="height" constant="47" id="P1I-r4-54m"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Allow"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-9X-vxU">
-                                        <rect key="frame" x="0.0" y="55" width="119" height="47"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="iZ2-ld-w38"/>
-                                            <constraint firstAttribute="height" constant="47" id="jQk-yu-JIM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Not now"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking on allow button, you will give the Foody the permission to access your location." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb6-Ie-962">
-                                <rect key="frame" x="42" y="349" width="290" height="125"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
-                                <color key="textColor" red="0.7725055520304569" green="0.16474641388779482" blue="0.11403753668679337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIj-4Z-piO">
+                                <rect key="frame" x="104.5" y="418" width="166" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="8Ki-2c-rO3"/>
+                                    <constraint firstAttribute="height" constant="36" id="div-fU-7RA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Show Permission">
+                                    <color key="titleColor" red="0.87650697970000002" green="0.44271151949999998" blue="0.19034071659999999" alpha="0.83962970889999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowPermission:" destination="4xP-31-5Os" eventType="touchUpInside" id="Lk1-TS-CG9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cb6-Ie-962" firstAttribute="bottom" secondItem="oMh-O5-2W0" secondAttribute="bottom" constant="-138" id="5G9-yC-SH1"/>
-                            <constraint firstItem="cb6-Ie-962" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="42" id="5U2-9A-pwh"/>
-                            <constraint firstItem="oMh-O5-2W0" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="bottom" constant="169" id="6hN-WC-wuu"/>
-                            <constraint firstItem="oMh-O5-2W0" firstAttribute="centerX" secondItem="W94-Ri-EZW" secondAttribute="centerX" id="VfY-hu-TZu"/>
-                            <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="wiw-nU-8u9" secondAttribute="trailing" constant="13" id="nEf-gV-NqB"/>
-                            <constraint firstItem="cb6-Ie-962" firstAttribute="top" secondItem="wiw-nU-8u9" secondAttribute="top" constant="269" id="nh7-xc-wRb"/>
-                            <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="cb6-Ie-962" secondAttribute="trailing" constant="43" id="oWM-zg-6JY"/>
-                            <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="oMh-O5-2W0" secondAttribute="trailing" constant="128" id="tw1-YD-EpR"/>
-                            <constraint firstItem="wiw-nU-8u9" firstAttribute="top" secondItem="JeF-pC-9cg" secondAttribute="top" constant="80" id="ujq-GF-weh"/>
-                            <constraint firstItem="wiw-nU-8u9" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="13" id="vYI-F3-zlO"/>
-                            <constraint firstItem="oMh-O5-2W0" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="128" id="wUh-cA-HaE"/>
-                            <constraint firstItem="JeF-pC-9cg" firstAttribute="bottom" secondItem="oMh-O5-2W0" secondAttribute="bottom" constant="55" id="ymc-BT-0Kt"/>
+                            <constraint firstItem="zIj-4Z-piO" firstAttribute="centerX" secondItem="W94-Ri-EZW" secondAttribute="centerX" id="Ggw-r9-kOK"/>
+                            <constraint firstItem="zIj-4Z-piO" firstAttribute="centerY" secondItem="W94-Ri-EZW" secondAttribute="centerY" constant="102.5" id="Hdg-2G-Sph"/>
+                            <constraint firstItem="wiw-nU-8u9" firstAttribute="centerX" secondItem="W94-Ri-EZW" secondAttribute="centerX" constant="-3" id="JPU-qL-tTT"/>
+                            <constraint firstItem="JeF-pC-9cg" firstAttribute="trailing" secondItem="wiw-nU-8u9" secondAttribute="trailing" constant="16" id="nEf-gV-NqB"/>
+                            <constraint firstItem="wiw-nU-8u9" firstAttribute="centerY" secondItem="W94-Ri-EZW" secondAttribute="centerY" constant="-123" id="sUF-EZ-WxJ"/>
+                            <constraint firstItem="wiw-nU-8u9" firstAttribute="leading" secondItem="JeF-pC-9cg" secondAttribute="leading" constant="10" id="vYI-F3-zlO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JeF-pC-9cg"/>
                         <userDefinedRuntimeAttributes>
@@ -336,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28h-QD-WWq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436" y="41"/>
+            <point key="canvasLocation" x="436" y="40.929535232383813"/>
         </scene>
         <!--Thank you for joining-->
         <scene sceneID="nWG-Zr-dLZ">

@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		047C72CC25F12B1800000A54 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72CB25F12B1800000A54 /* LocationViewController.swift */; };
-		04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */; };
-		04B1272D25ECA4FC00B54E39 /* MyOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */; };
-		04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */; };
-		04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */; };
+		047C72DB25F2954100000A54 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72DA25F2954100000A54 /* FoodTableViewCell.swift */; };
+		047C72DD25F2957600000A54 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72DC25F2957600000A54 /* FoodViewController.swift */; };
+		047C72DF25F2DD5300000A54 /* FoodDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C72DE25F2DD5300000A54 /* FoodDetailsViewController.swift */; };
 		04B1273325EE539A00B54E39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B1273225EE539900B54E39 /* GoogleService-Info.plist */; };
 		04B1273525EFBA3C00B54E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273425EFBA3C00B54E39 /* LoginViewController.swift */; };
 		04B1273725EFBA6A00B54E39 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */; };
@@ -27,10 +26,9 @@
 
 /* Begin PBXFileReference section */
 		047C72CB25F12B1800000A54 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderTableViewController.swift; sourceTree = "<group>"; };
-		04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
-		04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		047C72DA25F2954100000A54 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		047C72DC25F2957600000A54 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		047C72DE25F2DD5300000A54 /* FoodDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsViewController.swift; sourceTree = "<group>"; };
 		04B1273225EE539900B54E39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04B1273425EFBA3C00B54E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -81,16 +79,15 @@
 		04B1272325EC9F1200B54E39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04B1272E25ECA53900B54E39 /* AccountTableViewController.swift */,
 				04D02BC125E88C1B000B762D /* AppDelegate.swift */,
-				04B1273025ECA76E00B54E39 /* FoodDetailViewController.swift */,
 				047C72CB25F12B1800000A54 /* LocationViewController.swift */,
 				04B1273425EFBA3C00B54E39 /* LoginViewController.swift */,
-				04B1272A25ECA4D300B54E39 /* MenuTableViewController.swift */,
-				04B1272C25ECA4FC00B54E39 /* MyOrderTableViewController.swift */,
 				04D02BC325E88C1B000B762D /* SceneDelegate.swift */,
 				04B1273625EFBA6A00B54E39 /* SignUpViewController.swift */,
 				04B1273825F08B7400B54E39 /* ThankyouViewController.swift */,
+				047C72DA25F2954100000A54 /* FoodTableViewCell.swift */,
+				047C72DE25F2DD5300000A54 /* FoodDetailsViewController.swift */,
+				047C72DC25F2957600000A54 /* FoodViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,15 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B1273525EFBA3C00B54E39 /* LoginViewController.swift in Sources */,
-				04B1273125ECA76E00B54E39 /* FoodDetailViewController.swift in Sources */,
 				04B1273725EFBA6A00B54E39 /* SignUpViewController.swift in Sources */,
+				047C72DD25F2957600000A54 /* FoodViewController.swift in Sources */,
 				04D02BC225E88C1B000B762D /* AppDelegate.swift in Sources */,
+				047C72DB25F2954100000A54 /* FoodTableViewCell.swift in Sources */,
+				047C72DF25F2DD5300000A54 /* FoodDetailsViewController.swift in Sources */,
 				04B1273925F08B7400B54E39 /* ThankyouViewController.swift in Sources */,
 				047C72CC25F12B1800000A54 /* LocationViewController.swift in Sources */,
-				04B1272F25ECA53900B54E39 /* AccountTableViewController.swift in Sources */,
 				04D02BC425E88C1B000B762D /* SceneDelegate.swift in Sources */,
-				04B1272B25ECA4D300B54E39 /* MenuTableViewController.swift in Sources */,
-				04B1272D25ECA4FC00B54E39 /* MyOrderTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import SPPermissions
 
 
 class LoginViewController: UIViewController {
@@ -108,13 +109,21 @@ class LoginViewController: UIViewController {
                     }
                   }
             
+            else if(SPPermission.locationWhenInUse.isDenied)
+            {
+                
+             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+             let vc = storyboard.instantiateViewController(identifier: "Location" )
+                    vc.modalPresentationStyle = .overFullScreen
+             self.present(vc, animated: true)
+                  
+           }
             else
             {
-              let storyboard = UIStoryboard(name: "Main", bundle: nil)
-              let vc = storyboard.instantiateViewController(identifier: "Location" )
-                    vc.modalPresentationStyle = .overFullScreen
-              self.present(vc, animated: true)
-                  
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(identifier: "Main" )
+                       vc.modalPresentationStyle = .overFullScreen
+                self.present(vc, animated: true)
             }
       }
 }

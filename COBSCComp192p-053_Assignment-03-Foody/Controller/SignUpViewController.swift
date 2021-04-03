@@ -45,18 +45,19 @@ func passwordValidate(_ spassword: String) -> Bool
     
 }
     
+func mobileValidate(_ Mobile: String)-> Bool
+{
+       
+    let regEx = "^\\+(?:[0-9]?){6,14}[0-9]$"
+    let phoneCheck = NSPredicate(format: "SELF MATCHES[c] %@", regEx)
+    return phoneCheck.evaluate(with: Mobile)
+            
+}
+    
     
     func Signup()
         
     {
-       
-        if !emailValidate(semail.text!)
-        {
-            let alert = UIAlertController(title: "Error", message: "Enter a valid Email", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            return
-        }
         
         if semail.text?.isEmpty == true
         {
@@ -67,6 +68,23 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
+       
+        if !emailValidate(semail.text!)
+        {
+            let alert = UIAlertController(title: "Error", message: "Enter a valid Email", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        if spassword.text?.isEmpty == true
+               {
+                   let alert = UIAlertController(title: "Error", message: "Password cannot be empty", preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                   self.present(alert, animated: true, completion: nil)
+                   return
+               }
+        
         if !passwordValidate(spassword.text!)
         {
             let alert = UIAlertController(title: "Error", message: "Enter a strong password", preferredStyle: .alert)
@@ -76,11 +94,13 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
-        if spassword.text?.isEmpty == true
+       
+        if confirmpass.text?.isEmpty == true
         {
-            let alert = UIAlertController(title: "Error", message: "Password cannot be empty", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Please confirm your password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            
             return
         }
         
@@ -92,14 +112,7 @@ func passwordValidate(_ spassword: String) -> Bool
             return
         }
         
-        if confirmpass.text?.isEmpty == true
-        {
-            let alert = UIAlertController(title: "Error", message: "Please confirm your password", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-            return
-        }
+        
         
         if mobile.text?.isEmpty == true
         {
@@ -109,6 +122,14 @@ func passwordValidate(_ spassword: String) -> Bool
             
             return
         }
+        
+        if !mobileValidate(mobile.text!)
+               {
+                   let alert = UIAlertController(title: "Error", message: "Enter a valid Mobile number", preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                   self.present(alert, animated: true, completion: nil)
+                   return
+               }
         
         
        Auth.auth().createUser(withEmail: semail.text!, password: spassword.text!) { (authResult, error) in
@@ -121,19 +142,19 @@ func passwordValidate(_ spassword: String) -> Bool
             
             case .operationNotAllowed:
                 
-                let alert = UIAlertController(title: "Error", message: "Email is not allowed..!", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "Invalid Email", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                 break
                 
             case .emailAlreadyInUse:
-                let alert = UIAlertController(title: "Error", message: "The email address is already in use by another account.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "This email address is already in use by another account.", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                 break
               
             case .invalidEmail:
-                let alert = UIAlertController(title: "Error", message: "The email address is badly formatted. ", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "The email address is badly formatted", preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                 break
@@ -156,10 +177,6 @@ func passwordValidate(_ spassword: String) -> Bool
           let newUser = Auth.auth().currentUser
             _ = newUser?.email
             
-          let alert = UIAlertController(title: "Success", message: "User Registered Sucess", preferredStyle: .alert)
-                      alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                      self.present(alert, animated: true, completion: nil)
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "Thankyou")
             vc.modalPresentationStyle = .overFullScreen
@@ -171,5 +188,13 @@ func passwordValidate(_ spassword: String) -> Bool
     }
     
   }
+    
+    @IBAction func AlreadyAMember(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "Login")
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
     
 }

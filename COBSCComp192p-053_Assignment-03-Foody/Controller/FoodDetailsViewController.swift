@@ -36,6 +36,12 @@ class FoodDetailsViewController: UIViewController {
     }
     
     @IBAction func AddtoCart(_ sender: Any) {
+        
+                  let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                  let vc = storyboard.instantiateViewController(identifier: "AddCart" )
+                         vc.modalPresentationStyle = .overFullScreen
+                  self.present(vc, animated: true)
+                       
     }
     
 
